@@ -1,16 +1,17 @@
- <mvc:View controllerName="sl.ui5toolingdemo21.controller.MainView"
-  displayBlock="true"
-  xmlns="sap.m"
-  xmlns:mvc="sap.ui.core.mvc">
-  <App id="idAppControl" >
+<mvc:View controllerName="sl.ui5toolingdemo21.controller.MainView"
+          displayBlock="true"
+          xmlns="sap.m"
+          xmlns:mvc="sap.ui.core.mvc">
+  <App id="idAppControl">
     <pages>
       <Page title="{i18n>title}">
         <content>
-         <List headerText="Ni_idea" items="{
+          <List headerText="Ni_idea"
+                items="{
               path: '/ZSL_C_COVID'
             }">
-            <StandardListItem title="{zcountry}" info="{zconfirmed}" />
-          
+            <StandardListItem title="{zcountry}"
+                              info="{zconfirmed}" />
           </List>
         </content>
       </Page>
