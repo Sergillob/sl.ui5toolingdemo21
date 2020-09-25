@@ -5,7 +5,14 @@
   <App id="idAppControl" >
     <pages>
       <Page title="{i18n>title}">
-        <content></content>
+        <content>
+         <List headerText="Ni_idea" items="{
+              path: '/ZSL_C_COVID'
+            }">
+            <StandardListItem title="{zcountry}" info="{zconfirmed}" />
+          
+          </List>
+        </content>
       </Page>
     </pages>
   </App>

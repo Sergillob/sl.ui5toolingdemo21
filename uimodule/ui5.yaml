@@ -26,11 +26,12 @@ server:
       configuration:
         debug: false
         /sap/opu/odata/sap/:
-          target: http://<yourserver>:<yourserverport>
+          target: https://ldbpsapvsap0.kmudemo.site:44300
           auth:
-            fromEnv: false
-            user: <youruser>
-            pass: <yourpassword>
+            fromEnv: true
+            user: UI5_USERNAME
+            pass: UI5_PASSWORD
+            client: 300
 builder:
   customTasks:
   - name: ui5-task-nwabap-deployer
@@ -40,14 +41,14 @@ builder:
         path: dist/uimodule
         pattern: "**/*.*"
       connection:
-        server: http://<yourserver>:<yourserverport>
+        server: https://35.241.195.173:44300
       authentication:
-        user: <youruser>
-        password: <yourpassword>
+        user: S235246
+        password: Riodejaneiro1
       ui5:
         language: EN
-        package: <yourpackage>
-        bspContainer: <yourbspapplication>
+        package: $TMP
+        bspContainer: ZSL_UI5TOOL
         bspContainerText: Generated with easy-ui5
         transportNo: <yourtransport>
         calculateApplicationIndex: true
